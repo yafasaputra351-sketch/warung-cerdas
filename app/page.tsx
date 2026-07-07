@@ -10,7 +10,7 @@ import ClientEffects from "@/components/ClientEffects";
 
 async function getCMSData() {
   try {
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://warung-cerdas-production.up.railway.app";
+    const API_URL = "https://warung-cerdas-production.up.railway.app";
     const res = await fetch(`${API_URL}/api/landing-page`, {
       cache: "no-store",
     });

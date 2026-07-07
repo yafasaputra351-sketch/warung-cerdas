@@ -1,4 +1,4 @@
-const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || "https://warung-cerdas-production.up.railway.app") + "/api";
+const API_BASE_URL = "https://warung-cerdas-production.up.railway.app/api";
 
 export interface LandingPageData {
   hero: any;

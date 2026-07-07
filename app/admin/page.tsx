@@ -76,7 +76,7 @@ export default function AdminPage() {
       setData(pageData);
     } catch (err: any) {
       console.error(err);
-      setError(`Gagal memuat data dari server. Pastikan server Express berjalan di ${process.env.NEXT_PUBLIC_API_URL || "https://warung-cerdas-production.up.railway.app"}`);
+      setError("Gagal memuat data dari server. Pastikan server Express berjalan di https://warung-cerdas-production.up.railway.app");
     } finally {
       setLoading(false);
     }
