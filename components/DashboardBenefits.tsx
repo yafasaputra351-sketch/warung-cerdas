@@ -232,12 +232,12 @@ export default function DashboardBenefitsHowItWorks({ preview, advantages, steps
                   height: 44,
                   flexShrink: 0,
                   borderRadius: 10,
-                  background: "rgba(61, 47, 38, 0.15)",
-                  border: "1px solid rgba(61, 47, 38, 0.35)",
+                  background: "rgba(26, 107, 255, 0.15)",
+                  border: "1px solid rgba(26, 107, 255, 0.35)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#3d2f26"
+                  color: "#1a6bff"
                 }}>
                   {b.icon}
                 </div>

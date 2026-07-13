@@ -96,12 +96,12 @@ export default function Features({ data }: FeaturesProps) {
                   width: 44,
                   height: 44,
                   borderRadius: 10,
-                  background: "rgba(61, 47, 38, 0.15)",
-                  border: "1px solid rgba(61, 47, 38, 0.35)",
+                  background: "rgba(26, 107, 255, 0.15)",
+                  border: "1px solid rgba(26, 107, 255, 0.35)",
                   display: "inline-flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#3d2f26",
+                  color: "#1a6bff",
                   marginBottom: 14
                 }}
               >
