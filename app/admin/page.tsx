@@ -1827,9 +1827,9 @@ export default function AdminPage() {
         .btn-outline:hover {
           background: #f8fafc !important;
         }
-        aside button {
+        aside button.active-tab {
           color: #ffffff !important; /* Active state is white */
-          background-color: var(--blue);
+          background-color: #1a6bff !important;
         }
         aside button.tab-hover {
           color: #475569 !important; /* Inactive state is dark gray */
