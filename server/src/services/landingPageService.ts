@@ -5,21 +5,45 @@ const prisma = new PrismaClient();
 export class LandingPageService {
   // Aggregate all landing page data
   static async getLandingPageData() {
-    const hero = await prisma.hero.findFirst() || await this.createDefaultHero();
-    const partners = await prisma.partner.findMany();
-    const problems = await prisma.problem.findMany();
-    const solutionSection = await prisma.solutionSection.findFirst() || await this.createDefaultSolutionSection();
-    const solutionPoints = await prisma.solutionPoint.findMany();
-    const features = await prisma.feature.findMany();
-    const dashboardPreview = await prisma.dashboardPreview.findFirst() || await this.createDefaultDashboardPreview();
-    const advantages = await prisma.advantage.findMany();
-    const steps = await prisma.step.findMany();
-    const stats = await prisma.stat.findMany();
-    const testimonials = await prisma.testimonial.findMany();
-    const pricingPlans = await prisma.pricingPlan.findMany();
-    const faqs = await prisma.faq.findMany();
-    const ctaSection = await prisma.ctaSection.findFirst() || await this.createDefaultCtaSection();
-    const footerInfo = await prisma.footerInfo.findFirst() || await this.createDefaultFooterInfo();
+    const [
+      heroOpt,
+      partners,
+      problems,
+      solutionSectionOpt,
+      solutionPoints,
+      features,
+      dashboardPreviewOpt,
+      advantages,
+      steps,
+      stats,
+      testimonials,
+      pricingPlans,
+      faqs,
+      ctaSectionOpt,
+      footerInfoOpt
+    ] = await Promise.all([
+      prisma.hero.findFirst(),
+      prisma.partner.findMany(),
+      prisma.problem.findMany(),
+      prisma.solutionSection.findFirst(),
+      prisma.solutionPoint.findMany(),
+      prisma.feature.findMany(),
+      prisma.dashboardPreview.findFirst(),
+      prisma.advantage.findMany(),
+      prisma.step.findMany(),
+      prisma.stat.findMany(),
+      prisma.testimonial.findMany(),
+      prisma.pricingPlan.findMany(),
+      prisma.faq.findMany(),
+      prisma.ctaSection.findFirst(),
+      prisma.footerInfo.findFirst()
+    ]);
+
+    const hero = heroOpt || await this.createDefaultHero();
+    const solutionSection = solutionSectionOpt || await this.createDefaultSolutionSection();
+    const dashboardPreview = dashboardPreviewOpt || await this.createDefaultDashboardPreview();
+    const ctaSection = ctaSectionOpt || await this.createDefaultCtaSection();
+    const footerInfo = footerInfoOpt || await this.createDefaultFooterInfo();
 
     return {
       hero,
