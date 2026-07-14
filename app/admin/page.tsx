@@ -255,8 +255,33 @@ export default function AdminPage() {
         {/* SIDEBAR TABS */}
         <aside>
           <div className="glass-card" style={{ padding: 12, display: "flex", flexDirection: "column", gap: 4 }}>
-            <p style={{ fontSize: "0.75rem", color: "#475569", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 700, padding: "8px 12px", borderBottom: "1px solid #cbd5e1", marginBottom: 8, display: "flex", alignItems: "center", gap: 6 }}>
-              <LayoutGrid size={14} color="#1a6bff" /> Section Konten
+            <p style={{
+              fontSize: "0.85rem",
+              color: "#334155",
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              fontWeight: 800,
+              padding: "12px 12px 16px 12px",
+              borderBottom: "1px solid #cbd5e1",
+              marginBottom: 16,
+              display: "flex",
+              alignItems: "center",
+              gap: 10
+            }}>
+              <div style={{
+                width: 26,
+                height: 26,
+                borderRadius: 6,
+                background: "rgba(26, 107, 255, 0.08)",
+                border: "1px solid rgba(26, 107, 255, 0.2)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0
+              }}>
+                <LayoutGrid size={14} color="#1a6bff" />
+              </div>
+              Section Konten
             </p>
             {[
               { id: "hero", label: "Hero Banner" },
