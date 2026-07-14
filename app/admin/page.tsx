@@ -356,7 +356,7 @@ export default function AdminPage() {
                     umkmCountText: form.umkmCountText.value,
                   });
                 }}>
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12, display: "flex", alignItems: "center", gap: 12 }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16, display: "flex", alignItems: "center", gap: 12 }}>
                     <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <Monitor size={18} color="#1a6bff" />
                     </div>
@@ -422,7 +422,7 @@ export default function AdminPage() {
               {/* PARTNER / TRUSTED BY */}
               {activeTab === "partners" && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16 }}>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <Briefcase size={18} color="#1a6bff" />
@@ -503,7 +503,7 @@ export default function AdminPage() {
               {/* MASALAH NYATA UMKM */}
               {activeTab === "problems" && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16 }}>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <AlertTriangle size={18} color="#1a6bff" />
@@ -620,7 +620,7 @@ export default function AdminPage() {
                       btnLink: form.btnLink.value,
                     });
                   }} style={{ marginBottom: 40 }}>
-                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12, display: "flex", alignItems: "center", gap: 12 }}>
+                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <CheckCircle2 size={18} color="#1a6bff" />
                       </div>
@@ -745,7 +745,7 @@ export default function AdminPage() {
               {/* FITUR LENGKAP */}
               {activeTab === "features" && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16 }}>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <Layers size={18} color="#1a6bff" />
@@ -862,7 +862,7 @@ export default function AdminPage() {
                     kpi4Label: form.kpi4Label.value, kpi4Value: form.kpi4Value.value, kpi4Change: form.kpi4Change.value,
                   });
                 }}>
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12, display: "flex", alignItems: "center", gap: 12 }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16, display: "flex", alignItems: "center", gap: 12 }}>
                     <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <Image size={18} color="#1a6bff" />
                     </div>
@@ -935,7 +935,7 @@ export default function AdminPage() {
               {/* KEUNTUNGAN NYATA */}
               {activeTab === "advantages" && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16 }}>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <Zap size={18} color="#1a6bff" />
@@ -1043,7 +1043,7 @@ export default function AdminPage() {
               {/* CARA KERJA */}
               {activeTab === "steps" && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16 }}>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <HelpCircle size={18} color="#1a6bff" />
@@ -1180,7 +1180,7 @@ export default function AdminPage() {
               {/* STATISTIK */}
               {activeTab === "stats" && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16 }}>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <BarChart3 size={18} color="#1a6bff" />
@@ -1310,7 +1310,7 @@ export default function AdminPage() {
               {/* TESTIMONI */}
               {activeTab === "testimonials" && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16 }}>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <Users size={18} color="#1a6bff" />
@@ -1475,7 +1475,7 @@ export default function AdminPage() {
               {/* HARGA */}
               {activeTab === "pricing" && (
                 <div>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 12 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24, borderBottom: "1px solid #cbd5e1", paddingBottom: 16 }}>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 800, display: "flex", alignItems: "center", gap: 12 }}>
                       <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <CreditCard size={18} color="#1a6bff" />
