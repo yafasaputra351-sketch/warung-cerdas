@@ -1256,22 +1256,22 @@ export default function AdminPage() {
                     {data.stats.map((s) => {
                       const iconOpt = ICON_OPTIONS.find(o => o.name === s.icon);
                       return (
-                        <div key={s.id} className="glass-card" style={{ padding: 20, textAlign: "center", position: "relative" }}>
+                        <div key={s.id} className="glass-card" style={{ padding: 20, textAlign: "center", position: "relative", background: "#ffffff" }}>
                           <div style={{ position: "absolute", top: 12, right: 12, display: "flex", gap: 6 }}>
-                            <button onClick={() => startEdit(s)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "var(--white-dim)" }} onMouseEnter={e => e.currentTarget.style.color = "var(--cyan)"} onMouseLeave={e => e.currentTarget.style.color = "var(--white-dim)"}>
+                            <button onClick={() => startEdit(s)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "#64748b" }} onMouseEnter={e => e.currentTarget.style.color = "var(--cyan)"} onMouseLeave={e => e.currentTarget.style.color = "#64748b"}>
                               <Edit2 size={12} />
                             </button>
-                            <button onClick={() => handleCrudDelete("Statistik", LandingPageApi.deleteStat, s.id)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "var(--white-dim)" }} onMouseEnter={e => e.currentTarget.style.color = "#ef4444"} onMouseLeave={e => e.currentTarget.style.color = "var(--white-dim)"}>
+                            <button onClick={() => handleCrudDelete("Statistik", LandingPageApi.deleteStat, s.id)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "#64748b" }} onMouseEnter={e => e.currentTarget.style.color = "#ef4444"} onMouseLeave={e => e.currentTarget.style.color = "#64748b"}>
                               <Trash2 size={12} />
                             </button>
                           </div>
-                          <div style={{ width: 38, height: 38, borderRadius: 10, background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 10px", color: "var(--cyan)" }}>
+                          <div style={{ width: 38, height: 38, borderRadius: 10, background: "rgba(26, 107, 255, 0.08)", border: "1px solid rgba(26, 107, 255, 0.2)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 10px", color: "#1a6bff" }}>
                             {iconOpt ? iconOpt.icon : <Store size={16} />}
                           </div>
-                          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: "1.6rem", color: "white" }}>
+                          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: "1.6rem", color: "#0f172a" }}>
                             {s.value}{s.suffix}
                           </div>
-                          <p style={{ color: "var(--white-dim)", fontSize: "0.75rem", marginTop: 4 }}>{s.label}</p>
+                          <p style={{ color: "#475569", fontSize: "0.75rem", marginTop: 4 }}>{s.label}</p>
                         </div>
                       );
                     })}
